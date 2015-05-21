@@ -1,0 +1,36 @@
+2015-05-21 05:51:47,943 - [INFO] - from play in pool-4-thread-6 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-05-21 05:52:10,632 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-05-21 05:52:11,010 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-05-21 05:52:13,309 - [INFO] - from application in ForkJoinPool-4-worker-3 
+sub,ann
+
+2015-05-21 05:52:13,317 - [INFO] - from application in ForkJoinPool-4-worker-3 
+sub,bob
+
+2015-05-21 05:52:13,319 - [INFO] - from application in ForkJoinPool-4-worker-3 
+sub,carl
+
+2015-05-21 05:53:13,419 - [INFO] - from application in ForkJoinPool-4-worker-1 
+msg,ann,gghType here...
+
+2015-05-21 05:53:26,301 - [INFO] - from application in ForkJoinPool-4-worker-1 
+msg,bob,hjhj
+
+2015-05-21 08:13:56,763 - [INFO] - from application in ForkJoinPool-4-worker-1 
+msg,carl,ad
+
+2015-05-21 08:14:04,090 - [INFO] - from application in ForkJoinPool-4-worker-1 
+msg,carl,adsfasdf
+
+2015-05-21 08:14:10,005 - [INFO] - from application in ForkJoinPool-4-worker-1 
+msg,bob,3434
+
+2015-05-21 08:14:14,325 - [INFO] - from application in ForkJoinPool-4-worker-1 
+msg,ann,asdfadsf
+
