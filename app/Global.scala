@@ -7,10 +7,13 @@ import play.api.{Application, GlobalSettings}
 /**
  * @author sasajib
  */
-class Global extends GlobalSettings {
-    override def onStart(app: Application): Unit = instance().discover(Class[AtmosphereSocket]).ready()
+object Global extends GlobalSettings {
+    override def onStart(app: Application): Unit = instance().discover(classOf[AtmosphereSocket]).ready()
 
     override def onStop(app: Application): Unit = instance().shutdown()
 
-    override def onRouteRequest(request: RequestHeader): Option[Handler] = Router.dispatch(request)
+    override def onRouteRequest(request: RequestHeader): Option[Handler] = Router.dispatch(request) match {
+        case Some(result) => Some(result)
+        case None => super.onRouteRequest(request)
+    }
 }

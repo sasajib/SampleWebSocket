@@ -1,13 +1,13 @@
 package me.webstar.socket
 
-import org.atmosphere.config.service.{Disconnect, ManagedService, Message, Ready}
+import org.atmosphere.config.service.{ManagedService, Disconnect, Message, Ready}
 import org.atmosphere.cpr.{AtmosphereResource, AtmosphereResourceEvent}
 import play.Logger
 
 /**
  * @author sasajib
  */
-@ManagedService("/atmos")
+@ManagedService(path="/atmos")
 class AtmosphereSocket {
 
     @Ready

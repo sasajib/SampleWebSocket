@@ -3,7 +3,7 @@ package controllers
 import play.Logger
 import play.api.Play.current
 import play.api.libs.iteratee.{Enumerator, Iteratee}
-import play.api.mvc._
+import play.api.mvc.{Action, Controller, WebSocket}
 import play.sockjs.api._
 
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -48,6 +48,11 @@ object Application extends Controller {
         val out = Enumerator("Hello SockJS!")
 
         (in, out)
+    }
+
+
+    def jadu = Action{
+        Ok(views.html.indexTwo("hello atmos"))
     }
 
 
